@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.1.0"
   }
 }
