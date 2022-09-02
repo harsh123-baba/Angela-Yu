@@ -1,0 +1,14 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "this is the basic app where we can create package.json using cmd not with help of create-react-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

@@ -1,0 +1,1 @@
+console.log("Hi, how can you create package,json file using cmd there are no need to create a react app.")
