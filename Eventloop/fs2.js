@@ -2,36 +2,24 @@
 let fs = require('fs')
 console.log("before");
 
-// fs.readFile('f1.txt', cb1);
+fs.readFile('f1.txt', cb1);
 
-// fs.readFile('f2.txt', cb2);
+fs.readFile('f2.txt', cb2);
 
-// fs.readFile('f3.txt', cb3)
+fs.readFile('f3.txt', cb3)
 
-// function cb1(err, data){
-    
-    
-//         console.log("content "+ data);
-    
-// }
+function cb1(err, data){
+    console.log("content "+ data);
+}
 
-// function cb2(err, data){
-//     // if(err){
-//     //     console.log(err);
-//     // }
-//     // else{
-//         console.log("content "+data);
-//     // }
-// }
-// function cb3(err, data){
-//     // if(err){
-//     //     console.log(err);
-//     // }
-//     // else{
-//         console.log("content "+ data);
-//     // }   
-// }
-// console.log("after")
+function cb2(err, data){
+    console.log("content "+data);
+
+}
+function cb3(err, data){
+    console.log("content "+ data);
+}
+console.log("after")
 
 
 
@@ -41,29 +29,29 @@ console.log("before");
 
 
 
-// so how to execute it in line
-console.log();
-console.log("___________________________________________")
+// // so how to execute it in line
+// console.log();
+// // console.log("___________________________________________")
 
-fs = require("fs");
-fs.readFile('f1.txt', cb);
+// fs = require("fs");
+// fs.readFile('f1.txt', cb);
 
-// so i want all to execute linearly;
+// // so i want all to execute linearly;
 
-function cb(err, data){
-    console.log("conent "+data);
-    fs.readFile('f2.txt', cb1);
-    function cb1(err, data){
-        console.log("conent "+data);
-        fs.readFile('f3.txt', cb2);
-        function cb2(err, data){
-            console.log("conent "+data);
-        }
-    }
+// function cb(err, data){
+//     console.log("conent "+data);
+//     fs.readFile('f2.txt', cb1);
+//     function cb1(err, data){
+//         console.log("conent "+data);
+//         fs.readFile('f3.txt', cb2);
+//         function cb2(err, data){
+//             console.log("conent "+data);
+//         }
+//     }
 
-}
+// }
 
-console.log("after")
+// console.log("after")
 
 
 
