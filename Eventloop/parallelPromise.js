@@ -11,3 +11,4 @@ for(let i = 0; i<arr.length; i++){
 function cb(data){
     console.log("content -> "+data);
 }
+
